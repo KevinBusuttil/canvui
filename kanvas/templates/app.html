@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/app.css')}}">
+    <script type="text/javascript">
+      function draw() {
+        var canvas = document.getElementById('root');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+        }
+        canvas.width= window.innerWidth-30;
+        canvas.height=window.innerHeight-30;
+      }
+    </script>
+  </head>
+  <body onload="draw();">
+    <canvas id="root" width="150" height="150"></canvas>
+  </body>
+</html>

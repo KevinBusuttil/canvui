@@ -1,0 +1,7 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
+
+canvas { 
+    border: 1px solid black; 
+}
